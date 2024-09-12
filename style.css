@@ -50,7 +50,7 @@ width: 40%;
     height: 50px;
  display: flex;
  align-items: center;
-    border: 1px solid gray;
+    
     justify-content: space-around;
     width: 100%;
 
@@ -234,7 +234,6 @@ display: flex;
 
 
 
-
 .minus{
    
     display: flex;
@@ -324,13 +323,18 @@ display: flex;
 }
 .radio {
     display: flex;
-    gap: 20px;
+   
+    width: 400px;
 }
 
-.radio {
- 
-width: 30px;
+.radio input{
+    accent-color:#B9FF66;
+    width: 100px;
+    border: none;
 }
+ 
+
+
 .massgag{
     margin-top: 20px;
 }
@@ -471,10 +475,15 @@ margin-top: 20px;
     text-shadow: 10px -18px 25px,
                  rgb(255, 255, 255) -10px 18px 25px;
 }
-.create .icons{
-visibility: hidden;
-}
+.play .icons{
+    visibility: visible;
 
+}
+.play{
+    
+    margin-left: 35px;
+    margin-bottom: 30px;
+}
 
 
 
@@ -597,10 +606,21 @@ gap: 100px;
 .spans{
     width: 300px;
 }
+.play .icons{
+    visibility: hidden;
+}
+
 .contact{
     font-size: 15px;
     
 
+}
+.snap-1 svg{
+    
+    width: 180px;
+}
+.snap .create-btn{
+    width: 120px;
 }
 .all-contents{
     
@@ -660,6 +680,26 @@ gap: 100px;
 .cross{
     margin-left: 650px;
 }}
+@media  screen and (max-width:940px){
+    .subscribe-main{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+
+    }
+    .subscribe-main input{
+        width: 380px;
+        margin-left: 0;
+    }
+    .create-btn  {
+        width: 500px;
+       
+      justify-content: center;
+    }
+    .create-btn  svg{
+        width: 400px;
+    }
+}
 @media  screen and (max-width:900px) {
     
 .text-1 h1{
@@ -687,6 +727,12 @@ gap: 100px;
         
     
     }
+    .radio input{
+        width: 50px;
+    }
+    .subscribe-main input{
+        width: 250px;
+    }
     
     .all-contents{
     
@@ -697,18 +743,18 @@ gap: 100px;
        padding-right: 50px;
     }
     .subscribe-main input{
-        width: 350px;
+        width: 250px;
     }
+  
     .create-btn{
         width: 300px;
-        
-        margin-left: 50px;
-    }
-    .subscribe-main{
         display: flex;
-        flex-direction: column;
+        align-items: center;
         
     }
+.row-nav{
+    gap: 50px;
+}
     .last-main{
         width: 100%;
     }
@@ -831,18 +877,22 @@ ul{
     .cross{
         margin-left: 100px;
     }
+    .play .icons{
+        visibility: visible;
+    }
     .all-contents{
         display: flex;
         flex-direction: column;
         width: 300px;
         gap: 0;
     }
+
     .subscribe-main{
-        width: 250px;
-        margin-left: 30px;
+        width: 300px;
+        margin-left: 0;
     }
     .subscribe-main input {
-        width: 200px;
+        width: 260px;
 
     }
     .create-btn{
@@ -854,6 +904,7 @@ ul{
         flex-direction: column;
         
     }
+    
     .last-main{
         margin-left: 60px;
     }
@@ -915,6 +966,9 @@ ul{
     .plus{
 margin-left: 50px;
     }
+    .row-nav{
+        gap: 20px;
+    }
 
 }
 @media  screen and (max-width:375px){
@@ -925,6 +979,14 @@ margin-left: 50px;
         justify-content: center;
         
     }
+    .snap-1 {
+    margin-top: 0;
+        margin-left: 0;
+        margin-right: 50px;
+        padding: 0;
+    }
+
+
     .texting{
         padding: 0;
         padding-top: 30px;
@@ -979,6 +1041,9 @@ margin-left: 50px;
 .cross{
     margin-left: 75px;
 }
+.service p{
+    margin-left: 80px;
+}
 
 }
 
@@ -1013,6 +1078,19 @@ margin-left: 50px;
         margin-left: 50px;
         
     }
+    .play{
+    
+     margin-left: 0;
+        
+    }
+    .radio{
+        width: 200px;
+        gap: 30px;
+    }
+   
+    .last-main{
+        margin-left: 50px;
+    }
     .all-msg svg{
         width: 260px;
     }
@@ -1032,7 +1110,11 @@ margin-left: 50px;
         gap: 30px;
     }
     .subscribe-main{
+        width: 250px;
         margin-left: 0;
+    }
+    .subscribe-main input{
+        width: 220px;
     }
     .address{
         width: 200px;
@@ -1068,5 +1150,8 @@ margin-left: 50px;
     }
 .plus-2{
     margin-left: 40px;
+}
+.row-nav{
+    gap: 10px;
 }
 }
